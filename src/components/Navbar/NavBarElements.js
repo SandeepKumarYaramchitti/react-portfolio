@@ -80,7 +80,10 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
     font-size: 1.0rem;
-    &.active {
+    :active {
+        border-bottom: 3px solid #01bfc1;
+    }
+    :hover {
         border-bottom: 3px solid #01bfc1;
     }
 `
@@ -105,8 +108,7 @@ export const NavBtnLink = styled(LinkR)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-
-    &.hover {
+    :hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606;
